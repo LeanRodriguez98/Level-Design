@@ -63,7 +63,7 @@ public class PickUpKeyItems : MonoBehaviour
                     for (int j = 0; j < AuxKeyItems.Length; j++)
                     {
                         Instantiate(AuxKeyItems[i], 
-                            new Vector3(ObjetivePoint.transform.position.x, ObjetivePoint.transform.position.y, ObjetivePoint.transform.position.z - 20 -(5 * i)), Quaternion.identity);
+                            new Vector3(ObjetivePoint.transform.position.x, ObjetivePoint.transform.position.y - 3, ObjetivePoint.transform.position.z + 20 +(5 * i)), Quaternion.identity);
                     }
                     this.tag = "Untagged";
                 }
